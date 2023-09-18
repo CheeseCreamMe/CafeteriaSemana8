@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Administración de Promociones</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Definir Nueva Promoción</h1>
+        <form action="guardar_promocion.php" method="post">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea><br>
+
+            <label for="productos_elegibles">Productos Elegibles:</label>
+            <input type="text" id="productos_elegibles" name="productos_elegibles" required><br>
+
+            <label for="descuento">Descuento Aplicado:</label>
+            <input type="number" id="descuento" name="descuento" required><br>
+
+            <button type="submit">Guardar Promoción</button>
+        </form>
+    </div>
+</body>
+</html>
